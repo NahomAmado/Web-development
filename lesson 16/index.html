@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Variable Scope in JS</h1>
+    <p>Variables are categorised into 2 types: Local and Global Variables</p>
+    <button onclick="click1()">Click me</button>
+    <p id="d1"></p>
+    <p id="d2"></p>
+    <p id="d3">0</p>
+    <script>
+        var a = 5;
+        function click1()
+        {
+            var b = 6;
+            document.getElementById("d1").innerHTML = a * b;
+        }
+        document.getElementById("d2").innerHTML = a;
+        document.getElementById("d3").innerHTML = b;
+    </script>
+</body>
+</html>
